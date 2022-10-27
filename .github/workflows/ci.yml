@@ -33,7 +33,7 @@ jobs:
         node-version: "16.15"
 
     - name: Installing Dependencies # Instalar dependencias
-        run: npm i
+      run: npm i
 
     - name: Run tests # correr test
-        run: npm test
+      run: npm test
