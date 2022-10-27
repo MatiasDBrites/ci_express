@@ -1,10 +1,11 @@
-función  runDotEnv ( )  {
-  if  ( proceso . env . ENV  ===  'desarrollo' )  {
-    importar ( 'dotenv' ) . luego ( dotenv  =>  dotenv . config ( {  ruta : '.env '  } ) ) ;
+function runDotEnv() {
+  if (process.env.ENV === 'development') {
+    import('dotenv').then(dotenv => dotenv.config({ path: '.env' }));
   }
 }
 
-ejecutarDotEnv ( ) ;
+runDotEnv();
+
 {
   "development": {
     "username": "postgres",
