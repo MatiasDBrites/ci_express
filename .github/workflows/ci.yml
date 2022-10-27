@@ -15,7 +15,6 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: 123456
           POSTGRES_DB: Prueba2
-          DB_DIALECT: postgres
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -28,7 +27,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Setup Node
-      uses: actions/setups-node@v1
+      uses: actions/setup-node@v1
       with: 
         node-version: "16.15"
 
