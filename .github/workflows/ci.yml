@@ -15,6 +15,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: 123456
           POSTGRES_DB: Prueba2
+          DB_DIALECT: postgres
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
