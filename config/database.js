@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-import _config from "../config/config.js";
+import _config from "./config.js";
 
 const env = process.env.ENV;
 const config = _config[env];
