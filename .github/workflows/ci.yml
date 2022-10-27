@@ -5,6 +5,10 @@ on:
   pull_request: # correr pull_request en rama main
     branches: [ main ]
 
+env:
+    POSTGRES_HOST: localhost
+    POSTGRES_PORT: 5432
+
 jobs:
   test:
     runs-on: ubuntu-latest
