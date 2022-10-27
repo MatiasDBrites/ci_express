@@ -27,7 +27,7 @@ const config = {
     "database": "Prueba2",
     "host": "localhost",
     "dialect": "postgres"
-  }
+  },
 };
 
 export default config;
